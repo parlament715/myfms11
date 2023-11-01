@@ -1,8 +1,9 @@
 <script>
+import listitem from "./store.vue"
 </script>
 <template>
 <div class="paral">
-asdasd
+<listitem v-for="(item, index) in list" :content="item" :key="index"/>
 </div>
 </template>
 <style>
